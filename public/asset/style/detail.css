@@ -1,0 +1,304 @@
+* {
+    color: white;
+}
+
+
+main {
+    width: 100%;
+    height: fit-content;
+    background-color: #0d1117;
+}
+
+.hero {
+    position: relative;
+    height: 550px;
+    background: linear-gradient(to top, #0d1117 0%, transparent 100%), url(https://blog-content.phoenixproperty.co.th/wp-content/uploads/2020/03/Kantary-Bay-Rayong3_0-1024x576.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero .text {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.hero .text > * {
+    cursor: default;
+    margin-bottom: 12px;
+}
+
+.hero .text h2 {
+    font-size: 2.2rem;
+}
+
+.hero .text p {
+    font-size: 0.8rem;
+}
+
+.hero .text p:first-child{
+    margin-bottom: -8px !important;
+    font-size: 1rem;
+    color: #ffd700;
+}
+
+.hero .text p:last-child{
+    font-size: 0.8rem;
+    color: #bbbbbb;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.room-select {
+    width: 65%;
+}
+
+.room {
+    border-radius: 10px;
+    border: #1b2027 1px solid;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.header {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.header .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: #bbbbbb 1px solid;
+    width: 65%;
+}
+
+.header h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.room {
+    background-color: #151a21;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.room .content {
+    margin: 35px 0 35px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.left,.right {
+    height: 100%;
+}
+
+.left {
+    position: relative;
+    width: 70%;
+}
+
+.left > * {
+    margin-bottom: 10px;
+}
+
+.right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.left p {
+    color: #bbbbbb;
+}
+
+.right p {
+    font-size: 0.8rem;
+}
+
+.right p span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.right button {
+    padding: 10px 35px 10px 35px;    
+    border-radius: 5px;
+    border: none;
+    background-color: #ffd700;
+    cursor: pointer;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+}
+
+.right button:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+.bookPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Popupcontainer {
+    border-radius: 12px;
+    width: 30%;
+    height: 35%;
+    background-color: #151a21;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Popupcontainer .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #bbbbbb 1px solid;
+}
+
+.Popupcontainer .header h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Popupcontainer .body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conclu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+form {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.day {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.day > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    width: 25%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn button {
+    padding: 10px 35px 10px 35px;
+    margin-left: 25px;    
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn button:first-child {
+    background-color: #ff0000;
+    color: white;
+}
+
+.btn button:first-child:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+.btn button:last-child {
+    background-color: #00ff04;
+    color: black;
+}
+
+.btn button:last-child:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+.checkin input,
+.checkout input {
+    margin-top: 10px;
+    background-color: #0d1117;
+    outline: none;
+    border: #151a21 0.001px solid;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.price input {
+    width: 70%;
+    background-color: #0d1117;
+    outline: none;
+    border: #151a21 0.001px solid;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.unactive {
+    display: none !important;
+}

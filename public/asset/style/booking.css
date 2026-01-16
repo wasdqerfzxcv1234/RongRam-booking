@@ -1,0 +1,124 @@
+main {
+    width: 100%;
+    height: fit-content;
+    background-color: #0d1117;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.header {
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: #bbbbbb 1px solid;
+    width: 65%;
+}
+
+.header h2 {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-list {
+    width: 65%;
+}
+
+.booking-card {
+    background-color: #151a21;
+    border-radius: 10px;
+    border: #1b2027 1px solid;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 35px;
+    display: flex;
+}
+
+.booking-card img {
+    width: 300px;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.booking-card .content {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.booking-details {
+    color: white;
+}
+
+.booking-details h2 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.booking-details p {
+    color: #bbbbbb;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.booking-details p span {
+    color: white;
+    font-weight: 500;
+}
+
+.booking-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.booking-status .top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.booking-status .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.booking-status .bill-date {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+.booking-status .tag {
+    background-color: #2e7d32;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/style/main.css">
+    <link rel="stylesheet" href="../asset/style/detail.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="left">
+                <div class="logo">
+                    <h2>
+                        <span>OnTop</span>.hotel
+                    </h2>
+                </div>
+                <div class="menu">
+                    <div>
+                        <a href="hotel.html" class="ts">โรงแรมทั้งหมด</a>
+                    </div>
+                    <div>
+                        <a href="booking.html">การจองของฉัน</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="logout">
+                    <button>
+                        Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="hero">
+            <div class="text">
+                <p>⭐⭐⭐⭐⭐- five star hotel</p>
+                <h2>พยอมบอย Hotel</h2>
+                <p>Thanakorn Thianjindakul Thanakorn Thianjindakul <br> Thanakorn Thianjindakul Thanakorn Thianjindakul</p>
+                <p>123 ถนน 456 อำเภอ 789 ตำบล 101112 จังหวัด 131415</p>
+            </div>
+        </div>
+        <div class="header">
+            <div class="text">
+                <h2>เลือกห้องพัก</h2>
+            </div>
+        </div>
+        <div class="info">
+            <div class="room-select">
+                <div class="room">
+                    <img src="https://assets.doodecoapp.com/official-website/blog/modern-bedroom-design-ideas-1.jpg" alt="" width="250px">
+                    <div class="content">
+                        <div class="left">
+                            <h2>King of the hotel</h2>
+                            <p>เลขห้อง: D1</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, blanditiis rerum, consectetur inventore.</p>
+                            
+                        </div>
+                        <div class="right">
+                            <p><span>฿4,500</span>/คืน</p>
+                            <button id="book">จอง</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="room">
+                    <img src="https://assets.doodecoapp.com/official-website/blog/modern-bedroom-design-ideas-1.jpg" alt="" width="250px">
+                    <div class="content">
+                        <div class="left">
+                            <h2>Queen of the hotel</h2>
+                            <p>เลขห้อง: D2</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, blanditiis rerum, consectetur inventore.</p>
+                            
+                        </div>
+                        <div class="right">
+                            <p><span>฿3,500</span>/คืน</p>
+                            <button id="book">จอง</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="room">
+                    <img src="https://assets.doodecoapp.com/official-website/blog/modern-bedroom-design-ideas-1.jpg" alt="" width="250px">
+                    <div class="content">
+                        <div class="left">
+                            <h2>nobleman of the hotel</h2>
+                            <p>เลขห้อง: D3</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, blanditiis rerum, consectetur inventore.</p>
+                            
+                        </div>
+                        <div class="right">
+                            <p><span>฿2,500</span>/คืน</p>
+                            <button id="book">จอง</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- book popup -->
+    <div class="bookPopup unactive" id="bookPopup">
+        <div class="Popupcontainer">
+            <div class="header">
+                <h2>จองห้องพัก</h2>
+            </div>
+            <div class="body">
+                <form>
+                    <div class="day">
+                        <div class="checkin">
+                            <label>เลือกวันเข้าพัก</label>
+                            <input type="date" id="checkin">
+                        </div>
+                        <div class="checkout">
+                            <label>เลือกวันออกพัก</label>
+                            <input type="date" id="checkout">
+                        </div>
+                    </div>
+                    <div class="conclu">
+                        <div class="price">
+                            <label>ราคารวม</label>
+                            <input type="text" id="totalPrice" readonly>
+                        </div>
+                        <div class="btn">
+                            <button>ยกเลิก</button>
+                            <button>ยืนยัน</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>© 2023 Hotel. All rights reserved.</span>
+    </footer>
+    <script src="../asset/script/detail.js"></script>
+</body>
+</html>
