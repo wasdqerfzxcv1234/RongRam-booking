@@ -1,3 +1,7 @@
+<?php 
+require __DIR__ . '/../../app/config/multipages.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,19 +24,19 @@
                 </div>
                 <div class="menu">
                     <div>
-                        <a href="hotel.html">โรงแรมทั้งหมด</a>
+                        <a href="hotel.php">โรงแรมทั้งหมด</a>
                     </div>
                     <div>
-                        <a href="booking.html" class="ts">การจองของฉัน</a>
+                        <a href="booking.php" class="ts">การจองของฉัน</a>
                     </div>
                 </div>
             </div>
             <div class="right">
-                <div class="logout">
-                    <button>
+                <form method="post" class="logout">
+                    <button type="submit" name="logout_btn">
                         Logout
                     </button>
-                </div>
+                </form>
             </div>
         </div>
     </nav>

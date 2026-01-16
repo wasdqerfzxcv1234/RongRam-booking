@@ -1,3 +1,7 @@
+<?php 
+require_once __DIR__ . '/../app/config/login.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,19 +15,19 @@
     <main>
         <div class="container active" id="active">
             <h1>Login</h1>
-            <form>
+            <form method="post">
                 <div class="input">
                     <div class="UserName">
                         <label>Username</label>
-                        <input type="text" placeholder="Username" required>
+                        <input name="username" type="text" placeholder="Username" required>
                     </div>
                     <div class="Password">
                         <label>Password</label>
-                        <input type="password" placeholder="Password" required>
+                        <input name="password" type="password" placeholder="Password" required>
                     </div>
                 </div>
                 <div class="btn">
-                    <button>Login</button>
+                    <button type="submit" name="login_btn">Login</button>
                 </div>
             </form>
             <div class="footer">
@@ -32,19 +36,19 @@
         </div>
         <div class="container unactive" id="unactive">
             <h1>Register</h1>
-            <form>
+            <form method="post">
                 <div class="input">
                     <div class="User-email">
                         <label>Email</label>
-                        <input type="email" placeholder="Email" required>
+                        <input name="email" type="email" placeholder="Email" required>
                     </div>
                     <div class="UserName">
                         <label>Username</label>
-                        <input type="text" placeholder="Username" required>
+                        <input name="username" type="text" placeholder="Username" required>
                     </div>
                     <div class="Password">
                         <label>Password</label>
-                        <input type="password" placeholder="Password" required>
+                        <input name="password" type="password" placeholder="Password" required>
                     </div>
                     <div class="confirm-password">
                         <label>Confirm Password</label>
@@ -52,7 +56,7 @@
                     </div>
                 </div>
                 <div class="btn">
-                    <button>Register</button>
+                    <button type="submit" name="register_btn">Register</button>
                 </div>
             </form>
             <div class="footer">
