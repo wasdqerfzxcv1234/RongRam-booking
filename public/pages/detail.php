@@ -62,25 +62,22 @@ require __DIR__ . '/../../app/config/detail.php';
                 <h2>จองห้องพัก</h2>
             </div>
             <div class="body">
-                <form>
+                <form method="post">
                     <div class="day">
                         <div class="checkin">
-                            <label>เลือกวันเข้าพัก</label>
-                            <input type="date" id="checkin">
+                            <label for="checkin">เลือกวันเข้าพัก</label>
+                            <input name="checkin" type="date" id="checkin">
                         </div>
                         <div class="checkout">
-                            <label>เลือกวันออกพัก</label>
-                            <input type="date" id="checkout">
+                            <label for="checkout">เลือกวันออกพัก</label>
+                            <input name="checkout" type="date" id="checkout">
                         </div>
                     </div>
                     <div class="conclu">
-                        <div class="price">
-                            <label>ราคารวม</label>
-                            <input type="text" id="totalPrice" readonly>
-                        </div>
                         <div class="btn">
-                            <button>ยกเลิก</button>
-                            <button>ยืนยัน</button>
+                            <input id="room_id" type="hidden" name="room_id">
+                            <button type="button">ยกเลิก</button>
+                            <button name="book_submit" type="submit">ยืนยัน</button>
                         </div>
                     </div>
                 </form>
@@ -90,6 +87,6 @@ require __DIR__ . '/../../app/config/detail.php';
     <footer>
         <span>© 2023 Hotel. All rights reserved.</span>
     </footer>
-    <script src="../asset/script/detail.js"></script>
+    <script src="/hotel_booking/public/asset/script/detail.js"></script>
 </body>
 </html>

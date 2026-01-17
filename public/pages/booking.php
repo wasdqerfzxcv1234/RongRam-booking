@@ -1,5 +1,6 @@
 <?php 
 require __DIR__ . '/../../app/config/multipages.php';
+require __DIR__ . '/../../app/config/booking.php';
 ?>
 
 <!DOCTYPE html>
@@ -49,27 +50,7 @@ require __DIR__ . '/../../app/config/multipages.php';
 
         <div class="info">
             <div class="booking-list">
-                <!-- Sample Booking 1 -->
-                <div class="booking-card">
-                    <img src="https://assets.doodecoapp.com/official-website/blog/modern-bedroom-design-ideas-1.jpg"
-                        alt="Room Image">
-                    <div class="content">
-                        <div class="booking-details">
-                            <h2>พยอมบอย Hotel</h2>
-                            <p>เลขห้อง: <span>D1</span></p>
-                            <p>ชื่อคนจอง: <span>User Name</span></p>
-                            <p>เช็คอิน: <span>20 ม.ค. 2026</span></p>
-                            <p>เช็คเอาท์: <span>22 ม.ค. 2026</span></p>
-                        </div>
-                        <div class="booking-status">
-                            <div class="top">
-                                <span class="price">฿9,000</span>
-                                <span class="bill-date">ออกบิลเมื่อ: 16 ม.ค. 2026</span>
-                            </div>
-                            <span class="tag">ชำระเงินแล้ว</span>
-                        </div>
-                    </div>
-                </div>  
+                <?php $roomController->ViewAllBookings() ?> 
             </div>
         </div>
     </main>

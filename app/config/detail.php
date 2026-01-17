@@ -4,4 +4,6 @@ require_once __DIR__ . '/../controllers/HotelController.php';
 
 $hotelController = new HotelController();
 $roomsController = new RoomsController();
+
+$roomsController->BookingCheck();
 ?>

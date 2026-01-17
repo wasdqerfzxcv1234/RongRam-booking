@@ -10,7 +10,7 @@
         </div>
         <div class="right">
             <p><span>฿<?= $data['room_price'] ?></span>/คืน</p>
-            <button type="button" id="book">จอง</button>
+            <button value="<?= $data['room_id'] ?>" type="button" class="book">จอง</button>
         </div>
     </div>
 </div>
